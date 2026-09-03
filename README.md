@@ -29,10 +29,10 @@ Extension status lines (`ctx.ui.setStatus`) render below on their own lines, so 
 ln -s "$SRC/pi/pi-statusline" "$PI/extensions/pi-statusline"
 ```
 
-Or add it as a package:
+Or add it to `packages` in `~/.pi/agent/settings.json`:
 
 ```json
-{ "packages": ["git:your-org/pi-statusline"] }
+{ "packages": ["git:github.com/your-name/pi-statusline"] }
 ```
 
 The status line is on as soon as it is installed. Reload pi to pick it up.
