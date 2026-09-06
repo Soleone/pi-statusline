@@ -2,13 +2,13 @@
 
 A one-line session status bar for [pi](https://pi.dev), rendered in place of the built-in footer.
 
+<img width="2758" height="180" alt="image" src="https://github.com/user-attachments/assets/bbb96d94-5998-49ff-b6e3-af984ba7116c" />
+
 It shows where you are, what the session has spent, and how much context is left:
 
 ```text
 ~/src/pi/pi-statusline  ⎇ main*  Claude Sonnet 4.5 anthropic  ▰▰▰▱▱▱▱▱▱▱ 34%  $0.25 ⚡5M ↑502k ↓600 TTL 02:14  ⏱ 1h 12m  Started 09:30
 ```
-
-<img width="2758" height="180" alt="image" src="https://github.com/user-attachments/assets/bbb96d94-5998-49ff-b6e3-af984ba7116c" />
 
 | Field | Meaning |
 | --- | --- |
