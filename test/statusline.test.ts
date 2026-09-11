@@ -98,7 +98,7 @@ describe("registerStatusline", () => {
     expect(themed).toContainEqual({ color: "muted", text: "↓" });
     expect(themed).toContainEqual({ color: "muted", text: "⏱" });
     expect(themed).toContainEqual({ color: "muted", text: "Started" });
-    expect(plainRendered).toContain("$0.25 ⚡5M ↑502k ↓600 TTL 02:14  ⏱ 0m  Started ");
+    expect(plainRendered).toContain("$0.25 ⚡4.6M ↑502k ↓600 TTL 02:14  ⏱ 0m  Started ");
     expect(plainRendered).toMatch(/Started \d{2}:\d{2}$/m);
     vi.setSystemTime(1_166_000);
     footer.render(200);

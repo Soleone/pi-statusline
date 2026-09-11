@@ -7,7 +7,7 @@ A one-line session status bar for [pi](https://pi.dev), rendered in place of the
 It shows where you are, what the session has spent, and how much context is left:
 
 ```text
-~/src/pi/pi-statusline  ⎇ main*  Claude Sonnet 4.5 anthropic  ▰▰▰▱▱▱▱▱▱▱ 34%  $0.25 ⚡5M ↑502k ↓600 TTL 02:14  ⏱ 1h 12m  Started 09:30
+~/src/pi/pi-statusline  ⎇ main*  Claude Sonnet 4.5 anthropic  ▰▰▰▱▱▱▱▱▱▱ 34%  $0.25 ⚡5.0M ↑502k ↓600 TTL 02:14  ⏱ 1h 12m  Started 09:30
 ```
 
 | Field | Meaning |
@@ -17,7 +17,7 @@ It shows where you are, what the session has spent, and how much context is left
 | model / provider | Selected model display name and provider. |
 | `▰▰▱ 34%` | Context window fill, green through amber to red. |
 | `$0.25` | Session cost. |
-| `⚡5M` | Cache-read tokens; the largest share of spend on a long session, and invisible in pi's default footer. |
+| `⚡5.0M` | Cache-read tokens; the largest share of spend on a long session, and invisible in pi's default footer. |
 | `↑502k ↓600` | Input and output tokens across the current session branch. |
 | `TTL 02:14` | Time since the last cache refresh. Turns amber past 5 minutes. |
 | `⏱ 1h 12m` | Elapsed time in the session. |
@@ -71,7 +71,7 @@ An unreadable or malformed file degrades to defaults with a notification rather 
 
 This line came out of [pi-git](../pi-git), which rendered it behind a `customFooter` setting. It has no dependency on pi-git: the branch label uses pi's own git provider, the dirty flag is a plain `git status --porcelain`, and the token formatter is a local copy so a status line does not depend on a git workflow package.
 
-pi-git's commit notices reuse the `$0.42 ⚡19M ↑264k ↓86k` shape on purpose. If you change it, change `src/token-format.ts` here and `src/usage-format.ts` there together.
+pi-git's commit notices reuse the `$0.42 ⚡19.0M ↑264k ↓86k` shape on purpose. If you change it, change `src/token-format.ts` here and `src/usage-format.ts` there together.
 
 `setFooter` replaces the built-in footer wholesale, and the last extension to claim it wins. Installing another footer extension alongside this one gives you whichever loads last.
 
