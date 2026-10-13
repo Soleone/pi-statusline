@@ -1,0 +1,6 @@
+# Declined install scripts: none is needed (esbuild ships its binary as a platform package),
+# and pnpm refuses to install while any is left undecided.
+allowBuilds:
+  "@google/genai": false
+  esbuild: false
+  protobufjs: false
