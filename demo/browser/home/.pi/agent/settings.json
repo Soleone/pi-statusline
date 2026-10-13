@@ -3,5 +3,6 @@
   "defaultModel": "scripted",
   "defaultThinkingLevel": "medium",
   "quietStartup": true,
-  "enableInstallTelemetry": false
+  "enableInstallTelemetry": false,
+  "theme": "showcase"
 }

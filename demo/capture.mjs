@@ -40,7 +40,7 @@ try {
     attempts: 3,
     async start(page) {
       await page.waitFor("window.demoReady === true", { timeoutMs: 120_000 });
-      await page.run("eval", click("cd project && pi"));
+      // The recipe starts pi by itself.
       await page.waitFor(shows("Scripted"), { timeoutMs: 60_000 });
       await page.sleep(1500);
     },
