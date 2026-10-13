@@ -4,6 +4,10 @@ A one-line session status bar for [pi](https://pi.dev), rendered in place of the
 
 <img width="2758" height="180" alt="image" src="https://github.com/user-attachments/assets/bbb96d94-5998-49ff-b6e3-af984ba7116c" />
 
+**[Try it in your browser](https://pi-statusline.soleone.xyz)**: real pi with the extension, on a scripted model, so no key and nothing leaves the page.
+
+![pi answering two prompts while the status line counts context, cost and cache reads, and the branch turns dirty after an edit](demo/media/demo.webp)
+
 It shows where you are, what the session has spent, and how much context is left:
 
 ```text

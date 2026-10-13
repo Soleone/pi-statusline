@@ -1,0 +1,46 @@
+{
+  "project": "../..",
+  "pitch": "A one-line status bar for pi: repo state, model, context, cost, cache and timing. This is real pi with the extension, running in your browser on a scripted model.",
+  "mount": {
+    ".": {
+      "from": "./home"
+    },
+    ".pi-app": {
+      "from": "./.build/pi-app"
+    },
+    ".pi/agent/extensions/pi-statusline": {
+      "from": "../..",
+      "include": [
+        "index.ts",
+        "src",
+        "package.json"
+      ]
+    }
+  },
+  "env": {
+    "PATH": "~/bin:$PATH",
+    "PI_OFFLINE": "1"
+  },
+  "setup": [
+    "chmod +x bin/pi bin/git bin/fd bin/rg",
+    "node .demo/setup.js",
+    "npm install --no-audit --no-fund"
+  ],
+  "welcome": [
+    "\u001b[1mpi-statusline\u001b[0m replaces pi's footer with one line: repo, model, context, cost, cache and timing.",
+    "This is real pi with the extension. The model is scripted, so it knows a few prompts and needs no key.",
+    "",
+    "  cd project && pi              start pi in a small sample project",
+    "  what does this project do?   reads two files: watch context and cost grow",
+    "  add a --json flag            edits a file and runs it: the branch turns main*",
+    "  /statusline                  the extension's own command",
+    "",
+    "Or press the buttons above, in order."
+  ],
+  "hints": [
+    "cd project && pi",
+    "what does this project do?",
+    "add a --json flag",
+    "/statusline"
+  ]
+}

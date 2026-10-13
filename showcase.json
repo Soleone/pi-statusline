@@ -1,0 +1,40 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Soleone/showcase/main/schema/showcase.schema.json",
+  "title": "pi-statusline",
+  "pitch": "A one-line status bar for pi: repo state, model, context, cost, cache and timing.",
+  "description": "Replaces pi's footer with the numbers that matter in a long session: context fill, spend, cache reads the default footer hides, the cache TTL and elapsed time. Other extensions' status lines still render below it.",
+  "kind": "agent-extension",
+  "stage": "product",
+  "year": 2026,
+  "tech": [
+    "TypeScript",
+    "pi"
+  ],
+  "repo": "https://github.com/Soleone/pi-statusline",
+  "live": "https://pi-statusline.soleone.xyz",
+  "media": {
+    "hero": "demo/media/hero.png",
+    "motion": "demo/media/demo.webp",
+    "capture": "pnpm media:capture"
+  },
+  "demo": {
+    "strategy": "browser-terminal",
+    "local": "pnpm demo",
+    "externals": [
+      {
+        "name": "Model provider",
+        "type": "model",
+        "seam": "pi.registerProvider; the demo's extension registers a scripted provider (demo/browser/home/.pi/agent/extensions/demo-model.ts)",
+        "standIn": "simulated",
+        "note": "The model is scripted: it knows a few prompts, nothing is sent anywhere, and the cost shown is what its token counts would cost."
+      },
+      {
+        "name": "git",
+        "type": "app",
+        "seam": "pi reads .git/HEAD and the extension runs git status; the demo puts a stand-in first on the PATH (demo/browser/home/bin/git)",
+        "standIn": "simulated",
+        "note": "A stand-in for git reports the branch and which files changed since the page loaded."
+      }
+    ]
+  }
+}

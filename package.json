@@ -3,31 +3,46 @@
   "version": "0.1.0",
   "description": "A session status line for pi: repo state, context, cost, cache TTL, and timing",
   "type": "module",
-  "keywords": ["pi", "extension", "pi-package", "pi-coding-agent", "tui", "statusline", "footer"],
+  "keywords": [
+    "pi",
+    "extension",
+    "pi-package",
+    "pi-coding-agent",
+    "tui",
+    "statusline",
+    "footer"
+  ],
   "license": "MIT",
   "engines": {
     "node": ">=22.19.0"
   },
   "pi": {
-    "extensions": ["./index.ts"]
+    "extensions": [
+      "./index.ts"
+    ]
   },
   "peerDependencies": {
-    "@earendil-works/pi-coding-agent": "*",
     "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*",
     "@earendil-works/pi-tui": "*"
   },
   "devDependencies": {
-    "@earendil-works/pi-coding-agent": "0.84.2",
     "@earendil-works/pi-ai": "0.84.2",
+    "@earendil-works/pi-coding-agent": "0.84.2",
     "@earendil-works/pi-tui": "0.84.2",
+    "@soleone/showcase": "^0.2.0",
     "@types/node": "24.12.4",
+    "esbuild": "0.25.10",
     "typescript": "5.9.3",
     "vitest": "4.1.9"
   },
   "scripts": {
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "validate": "npm pack --dry-run"
+    "validate": "npm pack --dry-run",
+    "demo:build": "node demo/browser/build.mjs && showcase terminal demo/browser --out dist/browser",
+    "demo": "node demo/browser/build.mjs && showcase terminal demo/browser --out dist/browser --serve",
+    "media:capture": "node demo/capture.mjs"
   },
   "files": [
     "index.ts",
