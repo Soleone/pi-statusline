@@ -4,3 +4,5 @@ allowBuilds:
   "@google/genai": false
   esbuild: false
   protobufjs: false
+minimumReleaseAgeExclude:
+  - '@soleone/showcase@0.2.0'

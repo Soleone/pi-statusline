@@ -14,8 +14,8 @@ const exec = promisify(execFile);
 const media = path.resolve("demo/media");
 const viewport = { width: 1280, height: 820 };
 // The hint buttons and the terminal, below the page title. The hero is the bottom of the terminal, status line included.
-const crop = "iw:ih*600/820:0:ih*160/820";
-const heroCrop = "iw:ih*330/820:0:ih*420/820";
+const crop = "iw:ih*625/820:0:ih*125/820";
+const heroCrop = "iw:ih*330/820:0:ih*400/820";
 const click = (hint) => `[...document.querySelectorAll('#hints button')].find((button) => button.textContent === ${JSON.stringify(hint)}).click()`;
 const shows = (text) => `window.terminalText().includes(${JSON.stringify(text)})`;
 
