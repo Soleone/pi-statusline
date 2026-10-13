@@ -18,8 +18,8 @@ importers:
         specifier: 0.84.2
         version: 0.84.2
       '@soleone/showcase':
-        specifier: github:Soleone/showcase#c15d509
-        version: https://codeload.github.com/Soleone/showcase/tar.gz/c15d50951542a6fd00b51bf4b297341c6f2d163e
+        specifier: github:Soleone/showcase#73e18f9
+        version: https://codeload.github.com/Soleone/showcase/tar.gz/73e18f9b9e5be8faf14327201b609434b2323971
       '@types/node':
         specifier: 24.12.4
         version: 24.12.4
@@ -592,8 +592,8 @@ packages:
     resolution: {integrity: sha512-R8Rdn8Hy72KKcebgLiv8jQcQkXoLMOGGv5uI1/k0l+snqkOzQ1R0ChUBCxWMlBsFMekWjq0wRudIweFs7sKT5A==}
     engines: {node: '>=14.0.0'}
 
-  '@soleone/showcase@https://codeload.github.com/Soleone/showcase/tar.gz/c15d50951542a6fd00b51bf4b297341c6f2d163e':
-    resolution: {gitHosted: true, integrity: sha512-WWtWkKgYx5ZqAp+tE4MdUX5k7IoTAWtI1uqE8Jw77Ki5G91Ncp4dgegJLp2dGYDaUDGwJNTAL0OE8uQ6oQEsKw==, tarball: https://codeload.github.com/Soleone/showcase/tar.gz/c15d50951542a6fd00b51bf4b297341c6f2d163e}
+  '@soleone/showcase@https://codeload.github.com/Soleone/showcase/tar.gz/73e18f9b9e5be8faf14327201b609434b2323971':
+    resolution: {gitHosted: true, integrity: sha512-C/BowX218rd4LiC7vFsgYEZJTvzZoCpL/esow/gpS0mqaIzh9xYPaoMs7yRh+y0+kXNe4uaNyndm6oBxSQoecQ==, tarball: https://codeload.github.com/Soleone/showcase/tar.gz/73e18f9b9e5be8faf14327201b609434b2323971}
     version: 0.2.0
     engines: {node: '>=22'}
     hasBin: true
@@ -1771,7 +1771,7 @@ snapshots:
       '@smithy/util-buffer-from': 2.2.0
       tslib: 2.8.1
 
-  '@soleone/showcase@https://codeload.github.com/Soleone/showcase/tar.gz/c15d50951542a6fd00b51bf4b297341c6f2d163e': {}
+  '@soleone/showcase@https://codeload.github.com/Soleone/showcase/tar.gz/73e18f9b9e5be8faf14327201b609434b2323971': {}
 
   '@standard-schema/spec@1.1.0': {}
 
