@@ -89,7 +89,7 @@ pnpm test
 
 Tests cover config parsing and defaults, atomic writes with no leftover temp files, file modes, footer rendering including the context-bar colour ramp and TTL colouring, the hide list, and the periodic dirty-state render.
 
-## Structure
+## Project structure
 
 ```text
 index.ts           registration, /statusline command
